@@ -1,49 +1,36 @@
 === WooReer ===
 Contributors: sofyansitorus
-Tags: woocommerce,woocommerce-shipping,local-shipping,private-shipping
+Tags: woocommerce,distance-based-shipping,shipping-calculator,local-delivery,google-maps
 Donate link: https://www.buymeacoffee.com/sofyansitorus?utm_source=wooreer_plugin_page&utm_medium=referral
-Requires at least: 4.8
-Tested up to: 6.4.3
+Requires at least: 6.4
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.2.4
+Stable tag: 3.1.1
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
-WooReer (formerly WooCommerce Shipping Distance Matrix) calculates shipping rates based on distance via Google Maps Distance Matrix Service API.
+WooReer (formerly WooCommerce Shipping Distance Matrix) calculates shipping rates based on distance via Google Maps, Mapbox, or DistanceMatrix.ai.
 
 == Description ==
-WooReer (formerly WooCommerce Shipping Distance Matrix) is a WooCommerce shipping rates calculator that allows you to easily offer shipping rates based on the distance calculated using Google Maps Distance Matrix Service API.
+WooReer (formerly WooCommerce Shipping Distance Matrix) is a powerful WooCommerce shipping rates calculator that allows you to offer shipping rates based on distance. The plugin features a flexible API provider architecture, supporting Google Maps Routes API, Mapbox Matrix API, and DistanceMatrix.ai, giving you more choice and control over your mapping services.
 
-This plugin perfect for the store owner who wants to charge customers for the delivery of items based on how far away they are from the store. A perfect example would be an online store that sells flowers, food, beverages. It’s not limited to just those, but anything that uses local delivery or self-delivery business.
+This plugin is perfect for store owners who want to charge customers for delivery based on the distance from the store. It is ideal for online stores selling flowers, food, or beverages, but is versatile enough for any business that offers local delivery services.
 
 = Key Features =
 
-* Set unlimited table rates rows.
-* Set different table rates rows for each WooCommerce shipping zone.
-* Set different per kilometer/mile shipping rates for each rate row.
-* Set different shipping rate for each product shipping class for each rate row.
-* Set fixed or flexible surcharge for each rate row.
-* Set fixed or flexible discounts for each rate row.
-* Set minimum shipping cost for each rate row.
-* Set maximum shipping cost for each rate row.
-* Set flat or progressive total shipping cost for each rate rows: Max, Average, Min, Per Class, Per Product, Per Piece.
-* Set custom shipping labels for each rate row.
-* Set rule for each rate row: Maximum Distances.
-* Set rule for each rate row: Minimum Order Quantity.
-* Set rule for each rate row: Maximum Order Quantity.
-* Set rule for each rate row: Minimum Order Amount.
-* Set rule for each rate row: Maximum Order Amount.
-* Set shipping rate row priority.
-* Set shipping origin location using Maps Picker.
-* Set distances unit: Mile, Kilometer.
-* Set travel mode: Driving, Walking, Bicycling.
-* Set route restrictions: Avoid Tolls, Avoid Highways, Avoid Ferries, Avoid Indoor.
-* Set preferred route: Shortest Distance, Longest Distance, Shortest Duration, Longest Duration.
-* Round the distance up to the nearest absolute number.
-* Show distance info to the customer during checkout.
-
-= Compatibility =
-This plugin is not compatible with WooCommerce blocks. You MUST use [WooCommerce shortcode](https://woo.com/document/woocommerce-shortcodes) to build your cart and checkout page.
+* **Multi-Provider Support:** Choose between Google Maps, Mapbox, or DistanceMatrix.ai for the most accurate and cost-effective distance calculations. (More providers coming soon!)
+* **Flexible Table Rates:** Create unlimited shipping rules with granular control per WooCommerce shipping zone.
+* **Advanced Calculation Logic:** Calculate shipping based on distance, with options for progressive or flat rates.
+* **Dynamic Pricing Rules:**
+    *   Set rates per product, per shipping class, or based on total cart weight/quantity/amount.
+    *   Apply fixed or percentage-based surcharges and discounts.
+    *   Define minimum and maximum shipping costs.
+* **Smart Routing Options:**
+    *   **Travel Modes:** Driving, Walking, Bicycling.
+    *   **Restrictions:** Avoid Tolls, Highways, Ferries, or Indoor routes.
+* **Conditional Shipping:** Restrict shipping based on minimum/maximum order quantity, amount, or distance.
+* **Customer Transparency:** Display calculated distance on the cart and checkout pages.
+* **Easy Configuration:** Simple and straightforward settings panel.
 
 = Demo =
 
@@ -53,26 +40,31 @@ Please visit the link below for the live demo:
 
 = Dependencies =
 
-This plugin requires Google API Key and also need to have the following APIs services enabled: Distance Matrix API, Maps JavaScript API, Geocoding API, Places API.
+This plugin requires an API Key from your chosen provider (Google Maps, Mapbox, or DistanceMatrix.ai).
 
-Please visit the link below to go to the Google API Console to create API Key and to enable the API services:
+**For Google Maps:**
+You need to have the **Routes API** enabled.
 
-[https://console.developers.google.com/apis](https://console.developers.google.com/apis)
+**For Mapbox:**
+You need a Mapbox Access Token with access to the Matrix API.
+
+**For DistanceMatrix.ai:**
+You need an API Key from DistanceMatrix.ai.
 
 = Donation =
 
-If you enjoy using this plugin and find it useful, please consider donating. Your donation will help encourage and support the plugin’s continued development and better user support.
+If you find WooReer useful for your business, please consider supporting its development. Your donation helps ensure the plugin stays up-to-date, secure, and feature-rich.
 
-Please use the link below to if you would like to buy me some coffee:
+Every contribution, no matter the size, is deeply appreciated and motivates further improvements.
 
-[https://www.buymeacoffee.com/sofyansitorus](https://www.buymeacoffee.com/sofyansitorus?utm_source=wooreer_plugin_page&utm_medium=referral)
+[Buy me a coffee](https://www.buymeacoffee.com/sofyansitorus?utm_source=wooreer_plugin_page&utm_medium=referral)
 
 == Installation ==
 
 = Minimum Requirements =
 
-* WordPress 4.8 or later
-* WooCommerce 3.0 or later
+* WordPress 6.4 or later
+* WooCommerce 8.8 or later
 
 = AUTOMATIC INSTALLATION =
 
@@ -90,20 +82,6 @@ In the search field type “WooReer” and click Search Plugins. You can install
 
 == Frequently Asked Questions ==
 
-= I see the message "There are no shipping methods available" in the cart/checkout page, what should I do? =
-
-I have no clue what is happening on your server during the WooCommerce doing the shipping calculation, and there are too many possibilities to guess that can cause the shipping method not available. To find out the causes and the solutions, please switch to “ON” for the WooCommerce Shipping Debug Mode setting. Then open your cart/checkout page. You will see a very informative and self-explanatory debug info printed on the cart/checkout page. Please note that this debug info only visible for users that already logged-in/authenticated as an administrator. You must include this debug info in case you are going to create a support ticket related to this issue.
-
-[Click here](https://fast.wistia.net/embed/iframe/9c9008dxnr) for how to switch WooCommerce Shipping Debug Mode.
-
-= How to set the plugin settings? =
-
-You can set up the plugin setting from the WooCommerce Shipping Zones settings panel. Please [click here](https://fast.wistia.net/embed/iframe/95yiocro6p) for the video tutorial on how to set up the WooCommerce Shipping Zones.
-
-= I got an error related with the API Key setting, what should I do? =
-
-The error printed in there is coming from the Google API. Click any link printed within the error message to find out the causes and solutions. You may also need to check out the Browser's developer tools console to check if there is a JavaScript error/conflict.
-
 = Where can I get support or report a bug? =
 
 You can create a support ticket at plugin support forum:
@@ -118,23 +96,53 @@ I always welcome and encourage contributions to this plugin. Please visit the pl
 
 == Screenshots ==
 
-1. Store Location Settings
-2. Route Settings
-3. Global Rates Settings
-4. Table Rates Settings
-5. Advanced Rate Settings
-6. Store Location Picker
-6. Shopping Cart
+1. General Settings
+2. Distance Calculator API Settings
+3. Store Location Settings
+4. Total Cost Settings
+5. Table Rates Settings
+6. Edit Rate Item
+7. Add New Rate Item
 
 == Changelog ==
 
-> **WARNING:**
->
-> Upgrading to version 2.1.0 has some breaking changes. Some **settings data will be lost** and **re-setup the plugin** after the upgrade is required.
->
-> Upgrading from version 1.x to version 2.x is a major update and has breaking changes. Some **settings data will be lost** and **re-setup the plugin** after the upgrade is required.
->
-> **Please upgrade wisely and carefully.**
+= 3.1.1 =
+
+* Enhancement - Add configuration option to specify which fields are required for distance calculation during checkout.
+
+= 3.1.0 =
+
+* Enhancement - Add new API provider: Geoapify.
+
+= 3.0.4 =
+
+* Fix - Fix legacy shipping calculation not working after update to version 3.
+
+= 3.0.3 =
+
+* Fix - Fix distance retrieval in Mapbox API response parsing.
+
+= 3.0.2 =
+
+* Fix - Restored missing Distance Unit setting.
+
+= 3.0.1 =
+
+* Fix - Fixed distance display not respecting WooCommerce decimal formatting settings during checkout.
+* Fix - Fixed custom shipping labels defined per table rate row not appearing on checkout form.
+
+= 3.0.0 =
+
+* Major - Complete codebase refactoring with improved architecture.
+* Enhancement - Migrated frontend JavaScript to TypeScript for better type safety and maintainability.
+* Enhancement - Refactored SCSS architecture for better organization and maintainability.
+* Enhancement - Added new API provider architecture with support for multiple distance calculation services.
+* Enhancement - Introduced utility classes for better code organization and reusability.
+* Enhancement - Improved build process with support for both minified and unminified assets.
+* Enhancement - Reorganized legacy code into dedicated legacy directory for better code structure.
+* Enhancement - Added comprehensive PHPDoc blocks throughout the codebase.
+* Enhancement - Added automated testing infrastructure.
+* Enhancement - Improved deployment scripts and configuration.
 
 = 2.2.4 =
 
