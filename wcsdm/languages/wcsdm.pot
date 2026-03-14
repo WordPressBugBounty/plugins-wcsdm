@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooReer 3.1.3\n"
+"Project-Id-Version: WooReer 3.1.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wcsdm\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #. Description of the plugin
 #: wcsdm.php
-msgid "WooCommerce shipping rates calculator allows you to offer shipping rates based on distance using Google Maps, Mapbox, or DistanceMatrix.ai."
+msgid "WooCommerce shipping rates calculator allows you to offer shipping rates based on distance using Google Maps, Mapbox, DistanceMatrix.ai, Geoapify, or HERE."
 msgstr ""
 
 #. Author of the plugin
@@ -39,16 +39,25 @@ msgstr ""
 msgid "https://github.com/sofyansitorus"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:81
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:52
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:75
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:81
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:52
 #: includes/api-providers/class-wcsdm-api-provider-google.php:75
+#: includes/api-providers/class-wcsdm-api-provider-here.php:95
 msgid "API Key"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:83
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:83
 msgid "DistanceMatrix.ai API key for distance calculation."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:93
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:61
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:87
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:313
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:93
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:61
 #: includes/api-providers/class-wcsdm-api-provider-google.php:87
@@ -56,176 +65,230 @@ msgstr ""
 msgid "Travel Mode"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:95
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:89
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:95
 #: includes/api-providers/class-wcsdm-api-provider-google.php:89
 msgid "Specify the mode of travel."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:110
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:110
 msgid "Application Type"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:112
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:112
 msgid "Specify which API is right for you."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:115
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:115
 msgid "Distance Matrix API Accurate"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:116
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:116
 msgid "Distance Matrix API Fast"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:186
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:175
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:186
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:182
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:186
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:175
 #: includes/api-providers/class-wcsdm-api-provider-google.php:186
+#: includes/api-providers/class-wcsdm-api-provider-here.php:209
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:182
 msgid "Check the log for more details."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:233
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:233
 msgid "Distance Matrix API by DistanceMatrix.ai"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-distancematrix.php:442
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:286
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:330
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:320
 #: includes/api-providers/class-wcsdm-api-provider-distancematrix.php:442
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:286
 #: includes/api-providers/class-wcsdm-api-provider-google.php:330
+#: includes/api-providers/class-wcsdm-api-provider-here.php:333
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:320
 msgid "API request failed."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:54
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:54
 msgid "Geoapify API key."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:63
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:63
 msgid "Mode of travel for route calculation."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:86
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:86
 msgid "Route Optimization"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:88
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:88
 msgid "Route optimization type, the default value is balanced. Check Route optimization type for more information."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:99
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:105
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:99
 #: includes/api-providers/class-wcsdm-api-provider-google.php:105
+#: includes/api-providers/class-wcsdm-api-provider-here.php:125
 msgid "Route Avoidances"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:101
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:101
 msgid "List of road types or locations to be avoided by the router."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-geoapify.php:197
 #: includes/api-providers/class-wcsdm-api-provider-geoapify.php:197
 msgid "Routing API by Geoapify"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:77
 #: includes/api-providers/class-wcsdm-api-provider-google.php:77
 msgid "API key with Routes API enabled."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:107
 #: includes/api-providers/class-wcsdm-api-provider-google.php:107
 msgid "Specify route features to avoid."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-google.php:212
 #: includes/api-providers/class-wcsdm-api-provider-google.php:212
 msgid "Routes API by Google"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:89
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:89
 msgid "Access Token"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:91
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:91
 msgid "Access token with Matrix API and Geocoding API enabled."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:100
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:100
 msgid "Routing Profile"
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:102
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:102
 msgid "Choose the routing profile that best matches your delivery method. Each profile optimizes routes differently based on vehicle type and road restrictions."
 msgstr ""
 
+#: dist/includes/api-providers/class-wcsdm-api-provider-mapbox.php:208
 #: includes/api-providers/class-wcsdm-api-provider-mapbox.php:208
 msgid "Matrix API by Mapbox"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:297
 #: includes/classes/class-wcsdm-shipping-method.php:297
 msgid "WooReer shipping calculator allows you to easily offer shipping rates based on the distance calculated using Google Maps Distance Matrix Service API and other mapping providers."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:732
 #: includes/classes/class-wcsdm-shipping-method.php:732
 msgid "Are you sure you want to delete shipping rate #{{data.rowNumber}}? This action cannot be undone."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:738
+#: dist/includes/classes/class-wcsdm-shipping-method.php:792
 #: includes/classes/class-wcsdm-shipping-method.php:738
 #: includes/classes/class-wcsdm-shipping-method.php:792
 msgid "Cancel"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:739
+#: dist/includes/classes/class-wcsdm-shipping-method.php:793
 #: includes/classes/class-wcsdm-shipping-method.php:739
 #: includes/classes/class-wcsdm-shipping-method.php:793
 msgid "Confirm"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:915
 #: includes/classes/class-wcsdm-shipping-method.php:915
 msgid "Edit Rate"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:918
 #: includes/classes/class-wcsdm-shipping-method.php:918
 msgid "Delete Rate"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:921
 #: includes/classes/class-wcsdm-shipping-method.php:921
 msgid "Move Up"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:924
 #: includes/classes/class-wcsdm-shipping-method.php:924
 msgid "Move Down"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:994
+#: dist/includes/classes/class-wcsdm-shipping-method.php:995
 #: includes/classes/class-wcsdm-shipping-method.php:994
 #: includes/classes/class-wcsdm-shipping-method.php:995
 msgid "Add Rate"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1098
 #: includes/classes/class-wcsdm-shipping-method.php:1098
 msgid "Table rates settings cannot be empty"
 msgstr ""
 
 #. translators: %1$d = row number, %2$s = error message.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1120
 #: includes/classes/class-wcsdm-shipping-method.php:1120
 #, php-format
 msgid "Row #%1$d » %2$s"
 msgstr ""
 
 #. translators: %1$d = row number, %2$d = duplicate row number.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1141
 #: includes/classes/class-wcsdm-shipping-method.php:1141
 #, php-format
 msgid "Row #%1$d » Rules is duplicate of row #%2$d"
 msgstr ""
 
 #. translators: %s: comma-separated list of field names.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1545
 #: includes/classes/class-wcsdm-shipping-method.php:1545
 #, php-format
 msgid "Required destination address fields \"%s\" are missing for distance calculation"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1586
 #: includes/classes/class-wcsdm-shipping-method.php:1586
 msgid "Invalid origin latitude for distance calculation"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1600
 #: includes/classes/class-wcsdm-shipping-method.php:1600
 msgid "Invalid origin longitude for distance calculation"
 msgstr ""
 
 #. translators: %1$s: data version, %2$s: error message.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1671
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1704
 #: includes/classes/class-wcsdm-shipping-method.php:1671
 #: includes/classes/class-wcsdm-shipping-method.php:1704
 #, php-format
@@ -233,32 +296,53 @@ msgid "Legacy shipping calculation error with data version %1$s: %2$s"
 msgstr ""
 
 #. translators: %1$s: data version.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1694
 #: includes/classes/class-wcsdm-shipping-method.php:1694
 #, php-format
 msgid "Legacy shipping calculation result with data version %1$s"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1882
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1883
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:653
 #: includes/classes/class-wcsdm-shipping-method.php:1882
 #: includes/classes/class-wcsdm-shipping-method.php:1883
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:653
 msgid "General"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1896
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:177
 #: includes/classes/class-wcsdm-shipping-method.php:1896
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:177
 msgid "Tax Status"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1897
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:180
 #: includes/classes/class-wcsdm-shipping-method.php:1897
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:180
 msgid "Tax status of fee."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1900
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:184
 #: includes/classes/class-wcsdm-shipping-method.php:1900
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:184
 msgid "Taxable"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1901
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2372
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2383
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2392
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2427
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2438
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2448
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:185
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:334
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:447
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:494
 #: includes/classes/class-wcsdm-shipping-method.php:1901
 #: includes/classes/class-wcsdm-shipping-method.php:2372
 #: includes/classes/class-wcsdm-shipping-method.php:2383
@@ -273,16 +357,26 @@ msgstr ""
 msgid "None"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1907
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:189
 #: includes/classes/class-wcsdm-shipping-method.php:1907
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:189
 msgid "Enable Log"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1908
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:193
 #: includes/classes/class-wcsdm-shipping-method.php:1908
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:193
 msgid "Write data to WooCommerce System Status Report Log for importance event such API response error and shipping calculation failures. <a href=\"admin.php?page=wc-status&tab=logs\" target=\"_blank\">Click here</a> to view the log data."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1909
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1927
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1934
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:190
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:397
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:405
 #: includes/classes/class-wcsdm-shipping-method.php:1909
 #: includes/classes/class-wcsdm-shipping-method.php:1927
 #: includes/classes/class-wcsdm-shipping-method.php:1934
@@ -292,57 +386,86 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1913
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:357
 #: includes/classes/class-wcsdm-shipping-method.php:1913
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:357
 msgid "Distance Units"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1914
 #: includes/classes/class-wcsdm-shipping-method.php:1914
 msgid "Sets whether distance is measured in miles or kilometers."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1918
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:364
 #: includes/classes/class-wcsdm-shipping-method.php:1918
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:364
 msgid "Kilometer"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1919
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:365
 #: includes/classes/class-wcsdm-shipping-method.php:1919
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:365
 msgid "Mile"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1925
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:396
 #: includes/classes/class-wcsdm-shipping-method.php:1925
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:396
 msgid "Round Up Distance"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1926
 #: includes/classes/class-wcsdm-shipping-method.php:1926
 msgid "When enabled, the calculated shipping distance is always rounded up to the next whole number (for example, 3.1 becomes 4)."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1932
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:404
 #: includes/classes/class-wcsdm-shipping-method.php:1932
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:404
 msgid "Show Distance Info"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1933
 #: includes/classes/class-wcsdm-shipping-method.php:1933
 msgid "Display the calculated shipping distance to the customer on the checkout page."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1939
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:419
 #: includes/classes/class-wcsdm-shipping-method.php:1939
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:419
 msgid "Label"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1940
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:422
 #: includes/classes/class-wcsdm-shipping-method.php:1940
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:422
 msgid "This controls the label which the user sees during checkout."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1949
 #: includes/classes/class-wcsdm-shipping-method.php:1949
 msgid "Leave empty to inherit the global label setting."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1950
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2317
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2321
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2341
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2361
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2382
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2391
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2416
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2437
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2447
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2471
 #: includes/classes/class-wcsdm-shipping-method.php:1950
 #: includes/classes/class-wcsdm-shipping-method.php:2317
 #: includes/classes/class-wcsdm-shipping-method.php:2321
@@ -357,75 +480,102 @@ msgstr ""
 msgid "Inherit"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1990
 #: includes/classes/class-wcsdm-shipping-method.php:1990
 msgid "Distance Calculator API Settings"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:1993
 #: includes/classes/class-wcsdm-shipping-method.php:1993
 msgid "Distance Calculator API"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2000
 #: includes/classes/class-wcsdm-shipping-method.php:2000
 msgid "API Provider"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2002
 #: includes/classes/class-wcsdm-shipping-method.php:2002
 msgid "Choose the distance calculation API provider that will be used to calculate distances between your store and customer locations. Each provider offers different features, pricing, and accuracy levels."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2004
 #: includes/classes/class-wcsdm-shipping-method.php:2004
 msgid "Select API Provider"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2028
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2030
 #: includes/classes/class-wcsdm-shipping-method.php:2028
 #: includes/classes/class-wcsdm-shipping-method.php:2030
 msgid "Read documentation »"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2094
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:200
 #: includes/classes/class-wcsdm-shipping-method.php:2094
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:200
 msgid "Store Location Settings"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2095
 #: includes/classes/class-wcsdm-shipping-method.php:2095
 msgid "Configure your store's physical location coordinates. These coordinates are used as the starting point for distance calculations to customer addresses. You can find your coordinates using Google Maps or other mapping services."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2098
 #: includes/classes/class-wcsdm-shipping-method.php:2098
 msgid "Store Location"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2105
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:259
 #: includes/classes/class-wcsdm-shipping-method.php:2105
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:259
 msgid "Store Location Latitude"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2112
 #: includes/classes/class-wcsdm-shipping-method.php:2112
 msgid "Enter your store's latitude coordinate. You can find your coordinates using Google Maps or other mapping services."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2117
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:275
 #: includes/classes/class-wcsdm-shipping-method.php:2117
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:275
 msgid "Store Location Longitude"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2124
 #: includes/classes/class-wcsdm-shipping-method.php:2124
 msgid "Enter your store's longitude coordinate. You can find your coordinates using Google Maps or other mapping services."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2157
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2161
 #: includes/classes/class-wcsdm-shipping-method.php:2157
 #: includes/classes/class-wcsdm-shipping-method.php:2161
 msgid "Checkout Fields"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2158
 #: includes/classes/class-wcsdm-shipping-method.php:2158
 msgid "Configure the fields that are required to calculate distance during checkout."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2168
 #: includes/classes/class-wcsdm-shipping-method.php:2168
 msgid "Address 1"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2170
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2177
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2184
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2191
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2198
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2205
 #: includes/classes/class-wcsdm-shipping-method.php:2170
 #: includes/classes/class-wcsdm-shipping-method.php:2177
 #: includes/classes/class-wcsdm-shipping-method.php:2184
@@ -435,131 +585,183 @@ msgstr ""
 msgid "Required"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2175
 #: includes/classes/class-wcsdm-shipping-method.php:2175
 msgid "Address 2"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2182
 #: includes/classes/class-wcsdm-shipping-method.php:2182
 msgid "City"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2189
 #: includes/classes/class-wcsdm-shipping-method.php:2189
 msgid "State/Province"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2196
 #: includes/classes/class-wcsdm-shipping-method.php:2196
 msgid "Postcode/Zip Code"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2203
 #: includes/classes/class-wcsdm-shipping-method.php:2203
 msgid "Country"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2245
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2246
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:773
 #: includes/classes/class-wcsdm-shipping-method.php:2245
 #: includes/classes/class-wcsdm-shipping-method.php:2246
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:773
 msgid "Total Cost"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2257
 #: includes/classes/class-wcsdm-shipping-method.php:2257
 msgid "Flat: Maximum"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2258
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2285
 #: includes/classes/class-wcsdm-shipping-method.php:2258
 #: includes/classes/class-wcsdm-shipping-method.php:2285
 msgid "Set highest item cost as total."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2261
 #: includes/classes/class-wcsdm-shipping-method.php:2261
 msgid "Flat: Average"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2262
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2286
 #: includes/classes/class-wcsdm-shipping-method.php:2262
 #: includes/classes/class-wcsdm-shipping-method.php:2286
 msgid "Set average item cost as total."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2265
 #: includes/classes/class-wcsdm-shipping-method.php:2265
 msgid "Flat: Minimum"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2266
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2287
 #: includes/classes/class-wcsdm-shipping-method.php:2266
 #: includes/classes/class-wcsdm-shipping-method.php:2287
 msgid "Set lowest item cost as total."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2269
 #: includes/classes/class-wcsdm-shipping-method.php:2269
 msgid "Progressive: Per Class"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2270
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2288
 #: includes/classes/class-wcsdm-shipping-method.php:2270
 #: includes/classes/class-wcsdm-shipping-method.php:2288
 msgid "Accumulate total by grouping the product shipping class."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2273
 #: includes/classes/class-wcsdm-shipping-method.php:2273
 msgid "Progressive: Per Product"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2274
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2289
 #: includes/classes/class-wcsdm-shipping-method.php:2274
 #: includes/classes/class-wcsdm-shipping-method.php:2289
 msgid "Accumulate total by grouping the product ID."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2277
 #: includes/classes/class-wcsdm-shipping-method.php:2277
 msgid "Progressive: Per Piece"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2278
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2290
 #: includes/classes/class-wcsdm-shipping-method.php:2278
 #: includes/classes/class-wcsdm-shipping-method.php:2290
 msgid "Accumulate total by multiplying the quantity."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2304
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:535
 #: includes/classes/class-wcsdm-shipping-method.php:2304
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:535
 msgid "Total Cost Type"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2313
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:537
 #: includes/classes/class-wcsdm-shipping-method.php:2313
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:537
 msgid "Determine how is the total shipping cost will be calculated."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2329
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:560
 #: includes/classes/class-wcsdm-shipping-method.php:2329
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:560
 msgid "Minimum Cost"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2331
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:562
 #: includes/classes/class-wcsdm-shipping-method.php:2331
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:562
 msgid "Minimum cost that will be applied. The calculated shipping cost will never be lower than whatever amount set into this field. Set as zero value to disable."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2340
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2360
 #: includes/classes/class-wcsdm-shipping-method.php:2340
 #: includes/classes/class-wcsdm-shipping-method.php:2360
 msgid "Leave empty to inherit the global minimum cost setting."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2349
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:582
 #: includes/classes/class-wcsdm-shipping-method.php:2349
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:582
 msgid "Maximum Cost"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2350
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:584
 #: includes/classes/class-wcsdm-shipping-method.php:2350
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:584
 msgid "Maximum cost that will be applied. The calculated shipping cost will never be greater than whatever amount set into this field. Set as zero value to disable."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2368
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:441
 #: includes/classes/class-wcsdm-shipping-method.php:2368
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:441
 msgid "Surcharge Type"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2369
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:443
 #: includes/classes/class-wcsdm-shipping-method.php:2369
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:443
 msgid "Surcharge type that will be added to the total shipping cost."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2373
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2384
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2393
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2428
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2439
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2449
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:448
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:495
 #: includes/classes/class-wcsdm-shipping-method.php:2373
 #: includes/classes/class-wcsdm-shipping-method.php:2384
 #: includes/classes/class-wcsdm-shipping-method.php:2393
@@ -571,6 +773,14 @@ msgstr ""
 msgid "Fixed"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2374
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2385
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2394
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2429
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2440
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2450
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:449
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:496
 #: includes/classes/class-wcsdm-shipping-method.php:2374
 #: includes/classes/class-wcsdm-shipping-method.php:2385
 #: includes/classes/class-wcsdm-shipping-method.php:2394
@@ -582,44 +792,62 @@ msgstr ""
 msgid "Percentage"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2403
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:462
 #: includes/classes/class-wcsdm-shipping-method.php:2403
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:462
 msgid "Surcharge Amount"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2404
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:464
 #: includes/classes/class-wcsdm-shipping-method.php:2404
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:464
 msgid "Surcharge amount that will be added to the total shipping cost."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2414
 #: includes/classes/class-wcsdm-shipping-method.php:2414
 msgid "Leave empty to inherit the global surcharge amount."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2423
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:488
 #: includes/classes/class-wcsdm-shipping-method.php:2423
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:488
 msgid "Discount Type"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2425
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:490
 #: includes/classes/class-wcsdm-shipping-method.php:2425
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:490
 msgid "Discount type that will be deducted to the total shipping cost."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2459
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:509
 #: includes/classes/class-wcsdm-shipping-method.php:2459
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:509
 msgid "Discount Amount"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2460
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:511
 #: includes/classes/class-wcsdm-shipping-method.php:2460
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:511
 msgid "Discount amount that will be deducted to the total shipping cost."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2470
 #: includes/classes/class-wcsdm-shipping-method.php:2470
 msgid "Leave empty to inherit the global discount amount setting."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2506
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2515
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:605
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:610
 #: includes/classes/class-wcsdm-shipping-method.php:2506
 #: includes/classes/class-wcsdm-shipping-method.php:2515
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:605
@@ -627,110 +855,146 @@ msgstr ""
 msgid "Table Rates Settings"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2507
 #: includes/classes/class-wcsdm-shipping-method.php:2507
 msgid "Table Rates"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2508
 #: includes/classes/class-wcsdm-shipping-method.php:2508
 msgid "Calculates shipping costs based on the distance to the shipping address and any configured advanced rules. During checkout, the applicable rate is selected from the first row that matches both the maximum-distance condition and any advanced criteria. You can manually adjust the row order using the Move Up and Move Down buttons, which become available for rows that share the same maximum-distance value."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2554
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:660
 #: includes/classes/class-wcsdm-shipping-method.php:2554
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:660
 msgid "Shipping Rules"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2567
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:672
 #: includes/classes/class-wcsdm-shipping-method.php:2567
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:672
 msgid "Max Distance"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2568
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:673
 #: includes/classes/class-wcsdm-shipping-method.php:2568
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:673
 msgid "The maximum distances rule for the shipping rate. This input is required."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2594
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:688
 #: includes/classes/class-wcsdm-shipping-method.php:2594
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:688
 msgid "Min Order Amount"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2595
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:689
 #: includes/classes/class-wcsdm-shipping-method.php:2595
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:689
 msgid "The shipping rule for minimum order amount. Leave blank or fill with zero value to disable this rule."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2621
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:703
 #: includes/classes/class-wcsdm-shipping-method.php:2621
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:703
 msgid "Max Order Amount"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2622
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:704
 #: includes/classes/class-wcsdm-shipping-method.php:2622
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:704
 msgid "The shipping rule for maximum order amount. Leave blank or fill with zero value to disable this rule."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2648
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:718
 #: includes/classes/class-wcsdm-shipping-method.php:2648
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:718
 msgid "Min Order Quantity"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2649
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:719
 #: includes/classes/class-wcsdm-shipping-method.php:2649
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:719
 msgid "The shipping rule for minimum order quantity. Leave blank or fill with zero value to disable this rule."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2675
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:734
 #: includes/classes/class-wcsdm-shipping-method.php:2675
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:734
 msgid "Max Order Quantity"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2676
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:735
 #: includes/classes/class-wcsdm-shipping-method.php:2676
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:735
 msgid "The shipping rule for maximum order quantity. Leave blank or fill with zero value to disable this rule."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2732
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:750
 #: includes/classes/class-wcsdm-shipping-method.php:2732
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:750
 msgid "Shipping Rates"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2745
 #: includes/classes/class-wcsdm-shipping-method.php:2745
 msgid "Distance Rate"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2746
 #: includes/classes/class-wcsdm-shipping-method.php:2746
 msgid "The rate charged per kilometer/mile traveled. Set to 0 to set as free shipping."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2795
 #: includes/classes/class-wcsdm-shipping-method.php:2795
 msgid "Per Shipping Class Rates"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2796
 #: includes/classes/class-wcsdm-shipping-method.php:2796
 msgid "Set rate charged per kilometer/mile traveled for selected shipping classes."
 msgstr ""
 
 #. translators: %s is the shipping class name.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2814
 #: includes/classes/class-wcsdm-shipping-method.php:2814
 #, php-format
 msgid "Shipping Class: %s"
 msgstr ""
 
 #. translators: %s is the shipping class name.
+#: dist/includes/classes/class-wcsdm-shipping-method.php:2815
 #: includes/classes/class-wcsdm-shipping-method.php:2815
 msgid "Set to 0 to set as free shipping. Leave blank to disable the class-specific override."
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm-shipping-method.php:3250
 #: includes/classes/class-wcsdm-shipping-method.php:3250
 msgid "Distance"
 msgstr ""
 
+#: dist/includes/classes/class-wcsdm.php:252
 #: includes/classes/class-wcsdm.php:252
 msgid "Settings"
 msgstr ""
 
 #. translators: %s is the field title.
+#: dist/includes/helpers.php:438
+#: dist/includes/helpers.php:467
 #: includes/helpers.php:438
 #: includes/helpers.php:467
 #, php-format
@@ -738,30 +1002,39 @@ msgid "%s field is required"
 msgstr ""
 
 #. translators: %1$s is the field title, %2$d is the minimum value.
+#: dist/includes/helpers.php:500
 #: includes/helpers.php:500
 #, php-format
 msgid "%1$s field value cannot be lower than %2$d"
 msgstr ""
 
 #. translators: %1$s is the field title, %2$d is the maximum value.
+#: dist/includes/helpers.php:533
 #: includes/helpers.php:533
 #, php-format
 msgid "%1$s field value cannot be greater than %2$d"
 msgstr ""
 
 #. translators: %s is the field title.
+#: dist/includes/helpers.php:578
 #: includes/helpers.php:578
 #, php-format
 msgid "%s field value must be an integer"
 msgstr ""
 
 #. translators: %1$s is the field title, %2$d is the step value.
+#: dist/includes/helpers.php:583
 #: includes/helpers.php:583
 #, php-format
 msgid "%1$s field value must be a multiple of %2$d"
 msgstr ""
 
 #. translators: %s is the field title.
+#: dist/includes/helpers.php:614
+#: dist/includes/helpers.php:644
+#: dist/includes/helpers.php:674
+#: dist/includes/helpers.php:681
+#: dist/includes/helpers.php:713
 #: includes/helpers.php:614
 #: includes/helpers.php:644
 #: includes/helpers.php:674
@@ -771,291 +1044,360 @@ msgstr ""
 msgid "%s field value is invalid"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-api.php:85
 #: legacy/classes/class-wcsdm-legacy-api.php:85
 msgid "API response is empty."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-api.php:133
 #: legacy/classes/class-wcsdm-legacy-api.php:133
 msgid "Origin and/or destination of this pairing could not be geocoded."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-api.php:134
 #: legacy/classes/class-wcsdm-legacy-api.php:134
 msgid "No route could be found between the origin and destination."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-api.php:135
 #: legacy/classes/class-wcsdm-legacy-api.php:135
 msgid "Requested route is too long and cannot be processed."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-api.php:136
 #: legacy/classes/class-wcsdm-legacy-api.php:136
 msgid "Unknown error."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:58
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:58
 msgid "WooCommerce shipping rates calculator allows you to easily offer shipping rates based on the distance calculated using Google Maps Distance Matrix Service API."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:174
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:174
 msgid "General Settings"
 msgstr ""
 
 #. translators: %s is URL to the external link.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:202
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:202
 #, php-format
 msgid "This plugin requires Google API Key and also need to have the following APIs services enabled: Distance Matrix API, Maps JavaScript API, Geocoding API, Places API. Please <a href=\"%s\" target=\"_blank\">click here</a> to go to the Google API Console to create API Key and to enable the API services."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:205
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:205
 msgid "Distance Calculator API Key"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:208
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:208
 msgid "API Key used to calculate the shipping address distance."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:221
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:221
 msgid "Location Picker API Key"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:224
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:224
 msgid "API Key used to render the location picker map."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:239
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:239
 msgid "Store Origin Data Type"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:242
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:242
 msgid "Preferred data that will be used as the origin info when calculating the distance."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:246
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:246
 msgid "Coordinate (Recommended)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:247
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:247
 msgid "Address (Less Accurate)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:262
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:262
 msgid "Store location latitude coordinates"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:278
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:278
 msgid "Store location longitude coordinates"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:291
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:291
 msgid "Store Location Address"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:294
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:294
 msgid "Store location full address"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:310
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:310
 msgid "Route Settings"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:316
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:316
 msgid "Google Maps Distance Matrix API travel mode parameter."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:320
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:320
 msgid "Driving"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:321
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:321
 msgid "Walking"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:322
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:322
 msgid "Bicycling"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:327
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:327
 msgid "Route Restrictions"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:330
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:330
 msgid "Google Maps Distance Matrix API route restrictions parameter."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:335
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:335
 msgid "Avoid Tolls"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:336
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:336
 msgid "Avoid Highways"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:337
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:337
 msgid "Avoid Ferries"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:338
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:338
 msgid "Avoid Indoor"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:343
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:343
 msgid "Preferred Route"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:346
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:346
 msgid "Preferred route that will be used for calculation if API provide several routes"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:350
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:350
 msgid "Shortest Distance"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:351
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:351
 msgid "Longest Distance"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:352
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:352
 msgid "Shortest Duration"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:353
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:353
 msgid "Longest Duration"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:360
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:360
 msgid "Google Maps Distance Matrix API distance units parameter."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:378
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:378
 msgid "Rate per Kilometer"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:379
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:379
 msgid "Rate per Mile"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:400
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:400
 msgid "Round up the calculated shipping distance with decimal to the nearest absolute number."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:408
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:408
 msgid "Show the distance info to customer during checkout."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:415
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:415
 msgid "Default Rates Settings"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:416
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:416
 msgid "Default settings that will be inherited by certain settings in table rates when the value is empty."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:478
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:478
 msgid "Surcharge"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:525
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:525
 msgid "Discount"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:541
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:541
 msgid "Max - Set highest item cost as total (Flat)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:542
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:542
 msgid "Average - Set average item cost as total (Flat)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:543
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:543
 msgid "Min - Set lowest item cost as total (Flat)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:544
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:544
 msgid "Per Class - Accumulate total by grouping the product shipping class (Progressive)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:545
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:545
 msgid "Per Product - Accumulate total by grouping the product ID (Progressive)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:546
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:546
 msgid "Per Piece - Accumulate total by multiplying the quantity (Progressive)"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:606
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:606
 msgid "Calculate shipping costs based on the distance to the shipping address and advanced rules. During checkout, the applicable rate is determined by the first row that matches the maximum distance rule and any defined advanced rules. You can manually prioritize rate rows by dragging them vertically when there are rows with the same maximum distance values."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:616
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:616
 msgid "Advanced Rate Settings"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:620
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:620
 msgid "Advanced Table Rate Settings"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:757
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:757
 msgid "Distance Unit Rate"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:758
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:758
 msgid "The shipping rate within the distances range. Zero value will be assumed as free shipping."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:783
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:783
 msgid "Advanced"
 msgstr ""
 
 #. translators: %s is Product shipping class name.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:813
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:813
 #, php-format
 msgid "\"%s\" Shipping Class Rate"
 msgstr ""
 
 #. translators: %s is Product shipping class name.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:815
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:815
 #, php-format
 msgid "Rate for \"%s\" shipping class products. Leave blank to use defined default rate above."
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:846
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:846
 msgid "Inherit - Use default rate settings"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:858
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:858
 msgid "Leave blank to inherit from the global setting."
 msgstr ""
 
 #. translators: %s is api request parameter key.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1013
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1013
 #, php-format
 msgid "API request parameter is empty: %s"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1134
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1134
 msgid "API Response data is empty"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1146
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1146
 msgid "Calculated shipping data format is invalid"
 msgstr ""
 
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1506
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1506
 msgid "No shipping table rates rules match."
 msgstr ""
 
 #. translators: %s is field key.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1737
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1737
 #, php-format
 msgid "Shipping destination field is empty: %s."
 msgstr ""
 
 #. translators: %s is field key.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1745
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1745
 #, php-format
 msgid "Shipping destination field is invalid: %s."
 msgstr ""
 
 #. translators: %s is number of days.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1981
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1981
 #, php-format
 msgid "%s day"
@@ -1064,6 +1406,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s is number of hours.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1990
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1990
 #, php-format
 msgid "%s hour"
@@ -1072,9 +1415,30 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s is number of minutes.
+#: dist/legacy/classes/class-wcsdm-legacy-shipping-method.php:1999
 #: legacy/classes/class-wcsdm-legacy-shipping-method.php:1999
 #, php-format
 msgid "%s minute"
 msgid_plural "%s minutes"
 msgstr[0] ""
 msgstr[1] ""
+
+#: includes/api-providers/class-wcsdm-api-provider-here.php:97
+msgid "API key with Routing API and Geocoding & Search API enabled."
+msgstr ""
+
+#: includes/api-providers/class-wcsdm-api-provider-here.php:105
+msgid "Transport Mode"
+msgstr ""
+
+#: includes/api-providers/class-wcsdm-api-provider-here.php:107
+msgid "Mode of transport for route calculation. Each mode optimizes routes based on road restrictions and vehicle type."
+msgstr ""
+
+#: includes/api-providers/class-wcsdm-api-provider-here.php:127
+msgid "Select road features to avoid when calculating routes."
+msgstr ""
+
+#: includes/api-providers/class-wcsdm-api-provider-here.php:235
+msgid "Routing API by HERE"
+msgstr ""
