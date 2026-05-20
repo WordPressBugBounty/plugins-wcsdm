@@ -3,13 +3,13 @@ Contributors: sofyansitorus
 Tags: woocommerce,distance-based-shipping,shipping-calculator,local-delivery,google-maps
 Donate link: https://www.buymeacoffee.com/sofyansitorus?utm_source=wooreer_plugin_page&utm_medium=referral
 Requires at least: 6.4
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 3.1.4
+Stable tag: 3.1.5
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
-WooReer (formerly WooCommerce Shipping Distance Matrix) calculates shipping rates based on distance via Google Maps, Mapbox, DistanceMatrix.ai, Geoapify, or HERE.
+WooReer calculates shipping rates based on distance via Google Maps, Mapbox, DistanceMatrix.ai, Geoapify, or HERE.
 
 == Description ==
 WooReer (formerly WooCommerce Shipping Distance Matrix) is a powerful WooCommerce shipping rates calculator that allows you to offer shipping rates based on distance. The plugin features a flexible API provider architecture, supporting Google Maps Routes API, Mapbox Matrix API, DistanceMatrix.ai, Geoapify, and HERE Routing API, giving you more choice and control over your mapping services.
@@ -42,28 +42,37 @@ Please visit the link below for the live demo:
 
 This plugin requires an API Key from your chosen provider (Google Maps, Mapbox, DistanceMatrix.ai, Geoapify, or HERE).
 
-**For Google Maps:**
-You need to have the **Routes API** enabled.
+**[Google Maps](https://mapsplatform.google.com/):**
+You need an API Key with access to the [Routes API](https://developers.google.com/maps/documentation/routes).
 
-**For Mapbox:**
-You need a Mapbox Access Token with access to the Matrix API.
+**[Mapbox](https://www.mapbox.com/):**
+You need an Access Token with access to the [Matrix API](https://docs.mapbox.com/api/navigation/matrix/) and [Geocoding API](https://docs.mapbox.com/api/search/geocoding/).
 
-**For DistanceMatrix.ai:**
-You need an API Key from DistanceMatrix.ai.
+**[DistanceMatrix.ai](https://distancematrix.ai/):**
+You need an API Key with access to the [Distance Matrix API](https://distancematrix.ai/distance-matrix-api).
 
-**For Geoapify:**
-You need an API Key from Geoapify with access to the Route Matrix API.
+**[Geoapify](https://www.geoapify.com/):**
+You need an API Key with access to the [Route Matrix API](https://apidocs.geoapify.com/docs/route-matrix/) and [Forward Geocoding API](https://apidocs.geoapify.com/docs/geocoding/forward-geocoding/).
 
-**For HERE:**
-You need an API Key from HERE with access to the Routing API and Geocoding & Search API.
+**[HERE](https://www.here.com/):**
+You need an API Key with access to the [Routing API](https://www.here.com/docs/bundle/routing-api-developer-guide-v8/page/README.html) and [Geocoding & Search API](https://www.here.com/docs/bundle/geocoding-and-search-api-developer-guide/page/README.html).
 
 = Donation =
 
-If you find WooReer useful for your business, please consider supporting its development. Your donation helps ensure the plugin stays up-to-date, secure, and feature-rich.
+WooReer is a passion project developed and maintained in my free time, provided completely free of charge. If it saves you time, helps grow your business, or simply works the way you need it to, please consider supporting its continued development.
 
-Every contribution, no matter the size, is deeply appreciated and motivates further improvements.
+Your donation directly funds:
 
-[Buy me a coffee](https://www.buymeacoffee.com/sofyansitorus?utm_source=wooreer_plugin_page&utm_medium=referral)
+* New features and API provider integrations
+* Compatibility updates with the latest WordPress and WooCommerce releases
+* Bug fixes and ongoing maintenance
+* Better documentation and support
+
+Every contribution — no matter how small — makes a real difference and keeps this plugin alive and improving.
+
+[Buy me a coffee ☕](https://www.buymeacoffee.com/sofyansitorus?utm_source=wooreer_plugin_page&utm_medium=referral)
+
+Thank you for your support — it truly means a lot!
 
 == Installation ==
 
@@ -111,6 +120,10 @@ I always welcome and encourage contributions to this plugin. Please visit the pl
 7. Add New Rate Item
 
 == Changelog ==
+
+= 3.1.5 =
+
+* Fix - Resolved an issue where the "Min Order Quantity" rule was not working properly.
 
 = 3.1.4 =
 
